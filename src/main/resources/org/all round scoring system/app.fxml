@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.all round scoring system.App">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ControllerApp">
    <children>
       <Label fx:id="lblRegister" layoutX="52.0" layoutY="215.0" text=" Or register a new comptetior:" />
       <TextField fx:id="txtFldFirstName" layoutX="52.0" layoutY="261.0" />
