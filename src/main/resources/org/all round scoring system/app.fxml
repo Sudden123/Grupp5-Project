@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.all round scoring system.App">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ControllerApp">
    <children>
       <Label fx:id="lblRegister" layoutX="52.0" layoutY="215.0" text=" Or register a new comptetior:" />
       <TextField fx:id="txtFldFirstName" layoutX="52.0" layoutY="261.0" />
@@ -15,8 +15,8 @@
       <Label fx:id="lblFirstName" layoutX="52.0" layoutY="244.0" text="First name" />
       <Label fx:id="lblLastName" layoutX="226.0" layoutY="244.0" text="Last name" />
       <Label fx:id="lblGender" layoutX="52.0" layoutY="305.0" text="Gender" />
-      <RadioButton fx:id="rdBtnMale" layoutX="52.0" layoutY="331.0" mnemonicParsing="false" onAction="#chooseMale" text="male" />
-      <RadioButton fx:id="rdBtnFemale" layoutX="52.0" layoutY="357.0" mnemonicParsing="false" onAction="#chooseFemale" text="female" />
+      <RadioButton fx:id="rdBtnMale" layoutX="52.0" layoutY="331.0" mnemonicParsing="false" onAction="#loadDecathlonTable" text="male" />
+      <RadioButton fx:id="rdBtnFemale" layoutX="52.0" layoutY="357.0" mnemonicParsing="false" onAction="#loadHeptathlonTable" text="female" />
       <Button fx:id="btnRegister" layoutX="213.0" layoutY="321.0" mnemonicParsing="false" onAction="#registerCompetitor" prefHeight="54.0" prefWidth="134.0" text="Register competitor" />
    </children>
 </AnchorPane>
