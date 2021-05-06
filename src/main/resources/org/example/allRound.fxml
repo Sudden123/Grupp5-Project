@@ -18,6 +18,6 @@
       <RadioButton fx:id="rdBtnFemale" layoutX="46.0" layoutY="354.0" mnemonicParsing="false" onAction="#saveFemale" text="female" />
       <Button fx:id="btnRegister" layoutX="219.0" layoutY="327.0" mnemonicParsing="false" onAction="#registerCompetitor" prefHeight="53.0" prefWidth="150.0" text="Register competitor" />
       <Label fx:id="lblGender" layoutX="43.0" layoutY="301.0" text="Gender" />
-      <Label fx:id="lblRegistrationMessage" layoutX="43.0" layoutY="406.0" prefHeight="54.0" prefWidth="399.0" AnchorPane.bottomAnchor="3.6000000000000014" AnchorPane.topAnchor="406.0" />
+      <Label fx:id="lblRegistrationMessage" layoutX="43.0" layoutY="406.0" prefHeight="54.0" prefWidth="399.0" AnchorPane.bottomAnchor="4.0" AnchorPane.topAnchor="406.0" />
    </children>
 </AnchorPane>
