@@ -2,22 +2,19 @@ Feature: Allround scoring system
 
   @Prio1
   Scenario: As an official I want to be able to register a competitor first name
-    Given I have opened the program
-    And I have typed competitors first name in textbox
+    Given I have typed competitors first name in textbox
     When I press submit
     Then The competitors first name is saved
 
   @Prio1,5
   Scenario: As an official I want to be able to register a competitor last name
-    Given I have opened the program
-    And I have typed competitors last name in textbox
+    Given I have typed competitors last name in textbox
     When I press submit
     Then The competitors last name is saved
 
   @Prio1,9
   Scenario: As an official I want to be able to choose male or female
-    Given I have opened the program
-    And I have selected male or female
+    Given I have selected male or female
     When I press submit
     Then The competitors gender is saved
 
@@ -55,7 +52,7 @@ Feature: Allround scoring system
   @Prio7
   Scenario: As an official I want to be able to save a competitors score.
     Given I have chosen a competitor
-    And I have mark his score
+    And I have marked his score
     And I have saved the score
     Then I should be able to see the saved score in a excel file
 
