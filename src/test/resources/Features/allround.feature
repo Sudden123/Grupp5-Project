@@ -1,9 +1,11 @@
 Feature: Allround scoring system
 
+  Background:
+    Given I have opened the app
+
   @Prio1
   Scenario: As an official I want to be able to register a competitor first name
-    Given I have opened the app
-    And I have typed competitors first name in textbox
+    Given I have typed competitors first name in textbox
     When I press submit
     Then The competitors first name is saved
 
