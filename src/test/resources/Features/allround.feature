@@ -6,13 +6,13 @@ Feature: Allround scoring system
     When I press submit
     Then The competitors first name is saved
 
-  @Prio1,5
+  @Prio1.5
   Scenario: As an official I want to be able to register a competitor last name
     Given I have typed competitors last name in textbox
     When I press submit
     Then The competitors last name is saved
 
-  @Prio1,9
+  @Prio1.9
   Scenario: As an official I want to be able to choose male or female
     Given I have selected male or female
     When I press submit
