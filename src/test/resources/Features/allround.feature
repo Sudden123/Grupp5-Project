@@ -2,7 +2,7 @@ Feature: Allround scoring system
 
   @Prio1
   Scenario: As an official I want to be able to register a competitor first name
-    Given I have typed competitors first name in textbox
+    Given I have typed competitors first name
     When I press submit
     Then The competitors first name is saved
 
@@ -19,7 +19,7 @@ Feature: Allround scoring system
     Then The competitors gender is saved
 
   @Prio2
-  Scenario: As an offical i want to enter a performance value (double, not integer) one at a time (or more at the same time)
+  Scenario: As an official i want to enter a performance value (double, not integer) one at a time (or more at the same time)
     Given I have Performance results <value>
     And I have input Performance <value>
     When I press Save
