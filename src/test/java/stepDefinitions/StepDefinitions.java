@@ -11,12 +11,11 @@ public class StepDefinitions {
 
     @Given("I have typed competitors first name")
     public void i_have_typed_competitors_first_name() {
-        Competitor firstName = new Competitor();
-
         String input = "Per";
-        String FirstName = firstName.getFirstName(input);
+        Competitor firstName = new Competitor();
+        firstName.setFirstName(input);
 
-        assertEquals("Per", FirstName);
+        assertEquals("Per", firstName.getFirstName(input));
     }
     @When("I press submit")
     public void i_press_submit() {
