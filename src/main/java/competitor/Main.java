@@ -19,6 +19,15 @@ public class Main {
 
         System.out.println(firstName + " " + lastName);
 
+
+        System.out.println("Enter performance value for 100 m: ");
+        Performance value = new Performance();
+        double perfValue = scan.nextDouble();
+        value.setPerformanceValue(perfValue);
+        double finalValue = value.getPerformanceValue(perfValue);
+        System.out.println("The saved value is " + finalValue);
+
+
     }
 
 
