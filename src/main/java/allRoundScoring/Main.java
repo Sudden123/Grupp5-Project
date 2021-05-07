@@ -1,4 +1,4 @@
-package competitor;
+package allRoundScoring;
 
 import java.util.Scanner;
 

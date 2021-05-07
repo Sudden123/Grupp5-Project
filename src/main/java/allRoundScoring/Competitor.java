@@ -1,6 +1,4 @@
-package competitor;
-
-import java.util.Scanner;
+package allRoundScoring;
 
 public class Competitor {
     private String firstName = "";
