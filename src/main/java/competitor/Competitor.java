@@ -3,11 +3,24 @@ package competitor;
 import java.util.Scanner;
 
 public class Competitor {
+    private String firstName = "";
+    private String lastName = "";
 
-    public String getFirstName(String input) {
-        System.out.println("Type your first name: ");
-        Scanner scan = new Scanner(System.in);
-        String name = scan.nextLine();
-        return name;
+    public void setFirstName(String name) {
+        firstName = name;
     }
+
+    public void setLastName(String name){
+        lastName = name;
+    }
+
+    public String getFirstName(String name) {
+        return firstName;
+    }
+
+    public String getLastName(String name) {
+        return lastName;
+    }
+
 }
+
