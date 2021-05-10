@@ -2,31 +2,28 @@ Feature: Allround scoring system
 
   @Prio1
   Scenario: As an official I want to be able to register a competitor first name
-    Given I have opened the program
-    And I have typed competitors first name in textbox
+    Given I have typed competitors first name
     When I press submit
-    Then the competitors first name is saved
+    Then The competitors first name is saved
 
-  @Prio1,5
+  @Prio1.5
   Scenario: As an official I want to be able to register a competitor last name
-    Given I have opened the program
-    And I have typed competitors last name in textbox
+    Given I have typed competitors last name in textbox
     When I press submit
-    Then the competitors last name is saved
+    Then The competitors last name is saved
 
-  @Prio1,9
+  @Prio1.9
   Scenario: As an official I want to be able to choose male or female
-    Given I have opened the program
-    And I have selected male or female
+    Given I have selected male or female
     When I press submit
-    Then the competitors gender is saved
+    Then The competitors gender is saved
 
   @Prio2
-  Scenario: As an offical i want to enter a performance value (double, not integer) one at a time (or more at the same time)
+  Scenario: As an official i want to enter a performance value (double, not integer) one at a time (or more at the same time)
     Given I have Performance results <value>
     And I have input Performance <value>
     When I press Save
-    Then the result <value> should be saved
+    Then The result <value> should be saved
 
   @Prio3
   Scenario: As an official I want the decathlon track scoring used
@@ -55,7 +52,7 @@ Feature: Allround scoring system
   @Prio7
   Scenario: As an official I want to be able to save a competitors score.
     Given I have chosen a competitor
-    And I have mark his score
+    And I have marked his score
     And I have saved the score
     Then I should be able to see the saved score in a excel file
 
