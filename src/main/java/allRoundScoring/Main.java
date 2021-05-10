@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Choose action (type a number and press enter): ");
-        System.out.println("1. Register new competitor");
-        System.out.println("2. Load en existing competitor");
+        System.out.println("1. Register a new competitor");
+        System.out.println("2. Load an existing competitor");
         System.out.println("3. Show score in excel");
 
         int operator = scan.nextInt();
