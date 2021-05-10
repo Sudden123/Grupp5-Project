@@ -45,12 +45,35 @@ public class Main {
                             System.out.println("The saved value for 100 m is " + perfValue);
                             System.out.println("The score is " +  value.computeScore(field));
                             break;
+
                     }
 
 
                 } else if (event == 2) {
-                    System.out.println("Choose field event: \n1. 100 m Hurdles: \n2. High jump: \n 3.Shot put: \n4. 200 m: \n5. Long jump: \n6. Javelin throw: \n7. 800 m: ");
+                    System.out.println("Choose field event: \n1. 100 m Hurdles: \n2. High jump: \n3. Shot put: \n4. 200 m: \n5. Long jump: \n6. Javelin throw: \n7. 800 m: ");
                     int field = scan.nextInt();
+
+                    System.out.println("Enter a performance value: ");
+
+                    Performance value = new Performance();
+                    switch(field){
+
+                        case 1:
+
+                            double HurdlesValue = scan.nextDouble();
+                            value.setPerformanceValue(HurdlesValue);
+                            System.out.println("The saved value for 100 m Hurdles is " + HurdlesValue);
+                            System.out.println("The score is " +  value.computeScoreHepta(field));
+                            break;
+
+                        case 2:
+
+                            double HighJumpValue = scan.nextDouble();
+                            value.setPerformanceValue(HighJumpValue);
+                            System.out.println("The saved value for High Jump is " + HighJumpValue);
+                            System.out.println("The score is " +  value.computeScoreHepta(field));
+                            break;
+                    }
                 }
                 break;
 
