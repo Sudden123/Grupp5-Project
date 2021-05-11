@@ -68,7 +68,7 @@ public class Main {
                             System.out.println("Enter a performance value in seconds: ");
                             double hurdlesValue = scan.nextDouble();
                             value.setPerformanceValue(hurdlesValue);
-                            System.out.println("The saved value for 100 m Hurdles is " + hurdlesValue + "s");
+                            System.out.println("The saved value for 100 m hurdles is " + hurdlesValue + "s");
                             System.out.println("The score is " +  value.computeScoreHepta(field));
                             break;
 
@@ -76,7 +76,7 @@ public class Main {
                             System.out.println("Enter a performance value in centimeters: ");
                             double highJumpValue = scan.nextDouble();
                             value.setPerformanceValue(highJumpValue);
-                            System.out.println("The saved value for High Jump is " + highJumpValue + "cm");
+                            System.out.println("The saved value for High jump is " + highJumpValue + "cm");
                             System.out.println("The score is " +  value.computeScoreHepta(field));
                             break;
 
@@ -85,6 +85,38 @@ public class Main {
                             double shotPut = scan.nextDouble();
                             value.setPerformanceValue(shotPut);
                             System.out.println("The saved value for Shot put is " + shotPut + "m");
+                            System.out.println("The score is " +  value.computeScoreHepta(field));
+                            break;
+
+                        case 4:
+                            System.out.println("Enter a performance value in seconds: ");
+                            double twoHundredMeters = scan.nextDouble();
+                            value.setPerformanceValue(twoHundredMeters);
+                            System.out.println("The saved value for 200 m sprint is " + twoHundredMeters + "s");
+                            System.out.println("The score is " +  value.computeScoreHepta(field));
+                            break;
+
+                        case 5:
+                            System.out.println("Enter a performance value in centimeters: ");
+                            double longJump = scan.nextDouble();
+                            value.setPerformanceValue(longJump);
+                            System.out.println("The saved value for Long jump is " + longJump + "cm");
+                            System.out.println("The score is " +  value.computeScoreHepta(field));
+                            break;
+
+                        case 6:
+                            System.out.println("Enter a performance value in meters: ");
+                            double javelinThrow = scan.nextDouble();
+                            value.setPerformanceValue(javelinThrow);
+                            System.out.println("The saved value for Javelin throw is " + javelinThrow + "m");
+                            System.out.println("The score is " +  value.computeScoreHepta(field));
+                            break;
+
+                        case 7:
+                            System.out.println("Enter a performance value in seconds: ");
+                            double eightHundredMeters = scan.nextDouble();
+                            value.setPerformanceValue(eightHundredMeters);
+                            System.out.println("The saved value for 800 m sprint is " + eightHundredMeters + "s");
                             System.out.println("The score is " +  value.computeScoreHepta(field));
                             break;
                     }

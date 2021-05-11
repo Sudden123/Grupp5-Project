@@ -52,6 +52,26 @@ public class Performance {
                 score+= (int) (51.39 *shotPut);
                 break;
 
+            case 4:
+                double twoHundredMeters= Math.pow((42.5- performanceValue),1.81);
+                score+= (int) (4.99087 *twoHundredMeters);
+                break;
+
+            case 5:
+                double longJump= Math.pow((performanceValue- 210),1.41);
+                score+= (int) (0.188807 *longJump);
+                break;
+
+            case 6:
+                double javelinThrow= Math.pow((performanceValue- 3.8),1.04);
+                score+= (int) (15.9803 *javelinThrow);
+                break;
+
+            case 7:
+                double eightHundredMeters= Math.pow((254- performanceValue),1.88);
+                score+= (int) (0.11193 *eightHundredMeters);
+                break;
+
         }
         return score;
     }
