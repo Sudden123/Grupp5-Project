@@ -19,6 +19,9 @@ public class Competitor {
         return scores.get(event);
     }
 
+    private static boolean isValidName(String name){
+        return name.matches("[a-zA-Z]{0,24}+");
+    }
 
     public void setFirstName(String name) {
 
@@ -30,10 +33,20 @@ public class Competitor {
     }
 
     public String getFirstName(String name) {
+        if (isValidName(name)==true){
+            System.out.println("Valid name");
+        }else {
+            System.out.println("Invalid name");
+        }
         return firstName;
     }
 
     public String getLastName(String name) {
+        if (isValidName(name)==true){
+            System.out.println("Valid name");
+        }else {
+            System.out.println("Invalid name");
+        }
         return lastName;
     }
 
