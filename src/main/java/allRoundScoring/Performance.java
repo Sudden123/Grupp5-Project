@@ -28,6 +28,14 @@ public class Performance {
                 double longJump= Math.pow((performanceValue- 220),1.4);
                 score+= (int) (0.14354*longJump);
                 break;
+            case 3:
+                double shotPut= Math.pow((performanceValue- 1.5),1.05);
+                score+= (int) (51.39 *shotPut);
+                break;
+            case 4:
+                double highJump= Math.pow((performanceValue- 75),1.42);
+                score+= (int) (0.8465 *highJump);
+                break;
 
         }
         return score;

@@ -54,6 +54,20 @@ public class Main {
                             System.out.println("The saved value for Long jump is " + longJump + "m");
                             System.out.println("The score is " +  value.computeScore(field));
                             break;
+                        case 3:
+                            System.out.println("Enter a performance value in meters: ");
+                            double shotPut = scan.nextDouble();
+                            value.setPerformanceValue(shotPut);
+                            System.out.println("The saved value for Shot put is " + shotPut + "m");
+                            System.out.println("The score is " +  value.computeScore(field));
+                            break;
+                        case 4:
+                            System.out.println("Enter a performance value in centimeters: ");
+                            double highJumpValue = scan.nextDouble();
+                            value.setPerformanceValue(highJumpValue);
+                            System.out.println("The saved value for High jump is " + highJumpValue + "cm");
+                            System.out.println("The score is " +  value.computeScore(field));
+                            break;
                     }
 
 
