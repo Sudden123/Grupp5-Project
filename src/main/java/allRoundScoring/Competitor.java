@@ -21,6 +21,7 @@ public class Competitor {
 
 
     public void setFirstName(String name) {
+
         firstName = name;
     }
 
