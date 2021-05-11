@@ -40,7 +40,7 @@ public class Performance {
                 break;
 
             case 2:
-                double highJump= Math.pow((performanceValue- 75),1.348);
+                double highJump= Math.pow((26.7-performanceValue- 75),1.348);
                 score= (int) (1.84523 *highJump);
                 break;
 
