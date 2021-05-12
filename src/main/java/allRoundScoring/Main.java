@@ -45,7 +45,6 @@ public class Main {
                             System.out.println("The saved value for 100 m is " + perfValue);
                             System.out.println("The score is " +  value.computeScore(field));
                             break;
-
                     }
 
 
@@ -60,17 +59,17 @@ public class Main {
 
                         case 1:
 
-                            double HurdlesValue = scan.nextDouble();
-                            value.setPerformanceValue(HurdlesValue);
-                            System.out.println("The saved value for 100 m Hurdles is " + HurdlesValue);
+                            double hurdlesValue = scan.nextDouble();
+                            value.setPerformanceValue(hurdlesValue);
+                            System.out.println("The saved value for 100 m Hurdles is " + hurdlesValue);
                             System.out.println("The score is " +  value.computeScoreHepta(field));
                             break;
 
                         case 2:
 
-                            double HighJumpValue = scan.nextDouble();
-                            value.setPerformanceValue(HighJumpValue);
-                            System.out.println("The saved value for High Jump is " + HighJumpValue);
+                            double highJumpValue = scan.nextDouble();
+                            value.setPerformanceValue(highJumpValue);
+                            System.out.println("The saved value for High Jump is " + highJumpValue);
                             System.out.println("The score is " +  value.computeScoreHepta(field));
                             break;
                     }
