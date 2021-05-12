@@ -34,8 +34,6 @@ public class Main {
                     System.out.println("Choose field event: \n1. 100 m: \n2. Long jump: \n3. Shot put: \n4. High jump: \n5. 400 m: \n6. 110 m Hurdles: \n7. Discus throw: \n8. Pole vault: \n9. Javelin throw: \n10. 1500 m: ");
                     int field = scan.nextInt();
 
-
-
                     Performance value = new Performance();
                     switch(field){
                         case 1:
@@ -51,7 +49,36 @@ public class Main {
                             System.out.println("Enter a performance value in meters: ");
                             double longJump = scan.nextDouble();
                             value.setPerformanceValue(longJump);
-                            System.out.println("The saved value for Long jump is " + longJump + "m");
+                            System.out.println("The saved value for long jump is " + longJump + " m");
+                            System.out.println("The score is " +  value.computeScore(field));
+                            break;
+
+                        case 8:
+                            System.out.println("Enter a performance value in centimeters: ");
+                            double poleVault = scan.nextDouble();
+                            value.setPerformanceValue(poleVault);
+                            System.out.println("The saved value for pole vault is " + poleVault + " cm");
+                            System.out.println("The score is " +  value.computeScore(field));
+                            break;
+
+                        case 9:
+                            System.out.println("Enter a performance value in meters: ");
+                            double javelinThrow = scan.nextDouble();
+                            value.setPerformanceValue(javelinThrow);
+                            System.out.println("The saved value for javelin throw is " + javelinThrow + " m");
+                            System.out.println("The score is " +  value.computeScore(field));
+                            break;
+
+                        case 10:
+                            scan.nextLine();
+                            System.out.println("Enter a performance value in format minutes:seconds : ");
+                            String minAndSec = scan.nextLine();
+                            String[] splitIt = minAndSec.split(":");
+                            double minutesToSeconds = (Double.parseDouble(splitIt[0]))*60;
+                            double seconds = Double.parseDouble(splitIt[1]);
+                            double m1500 = minutesToSeconds + seconds;
+                            value.setPerformanceValue(m1500);
+                            System.out.println("The saved value for 1500 m is " + minAndSec);
                             System.out.println("The score is " +  value.computeScore(field));
                             break;
                     }
