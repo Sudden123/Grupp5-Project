@@ -20,8 +20,8 @@ public class Performance {
         int score= 0;
         switch(input){
             case 1:
-                double helpScore= Math.pow((18- performanceValue),1.81);
-                score+= (int) (25.4347*helpScore);
+                double m100= Math.pow((18- performanceValue),1.81);
+                score+= (int) (25.4347*m100);
                 break;
 
             case 2:
@@ -35,6 +35,21 @@ public class Performance {
             case 4:
                 double highJump= Math.pow((performanceValue- 75),1.42);
                 score+= (int) (0.8465 *highJump);
+                break;
+
+            case 8:
+                double poleVault= Math.pow((performanceValue-100),1.35);
+                score= (int) (0.2797*poleVault);
+                break;
+
+            case 9:
+                double javelinThrow= Math.pow((performanceValue-7),1.08);
+                score= (int) (10.14*javelinThrow);
+                break;
+
+            case 10:
+                double m1500= Math.pow((480-performanceValue),1.85);
+                score= (int) (0.03768*m1500);
                 break;
 
         }
