@@ -83,7 +83,6 @@ public class Main {
                             break;
                     }
 
-
                 } else if (event == 2) {
                     System.out.println("Choose field event: \n1. 100 m Hurdles: \n2. High jump: \n3. Shot put: \n4. 200 m: \n5. Long jump: \n6. Javelin throw: \n7. 800 m: ");
                     int field = scan.nextInt();
