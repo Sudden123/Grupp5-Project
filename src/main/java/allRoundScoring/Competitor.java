@@ -20,7 +20,7 @@ public class Competitor {
     }
 
     private static boolean isValidName(String name){
-        return name.matches("[a-zA-Z]{0,24}+");
+        return name.matches("(?i)[a-z]([- ',.a-z]{0,23}[a-z])?");
     }
 
     public void setFirstName(String name) {
@@ -33,10 +33,17 @@ public class Competitor {
     }
 
     public String getFirstName(String name) {
-        if (isValidName(name)==true){
-            System.out.println("Valid name");
-        }else {
-            System.out.println("Invalid name");
+        while (true){
+            try {
+                if (isValidName(name)==true){
+                    System.out.println("Valid name");
+                    break;
+                }
+            } catch (Exception e){
+                System.out.println("Invalid name");
+            }
+
+
         }
         return firstName;
     }
