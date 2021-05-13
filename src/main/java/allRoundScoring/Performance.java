@@ -52,7 +52,20 @@ public class Performance {
                 score= (int) (0.03768*m1500);
                 break;
 
+            case 5:
+                double m400= Math.pow((82-performanceValue),1.81);
+                score= (int) (1.53775*m400);
+                break;
 
+            case 6:
+                double hurdl= Math.pow((28.5-performanceValue),1.92);
+                score= (int) (5.74352*hurdl);
+                break;
+
+            case 7:
+                double discusThrow= Math.pow((performanceValue-4),1.1);
+                score= (int) (12.91*discusThrow);
+                break;
 
         }
         return score;
