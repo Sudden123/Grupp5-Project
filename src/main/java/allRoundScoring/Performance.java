@@ -52,20 +52,7 @@ public class Performance {
                 score= (int) (0.03768*m1500);
                 break;
 
-            case 8:
-                double poleVault= Math.pow((performanceValue-100),1.35);
-                score= (int) (0.2797*poleVault);
-                break;
 
-            case 9:
-                double javelinThrow= Math.pow((performanceValue-7),1.08);
-                score= (int) (10.14*javelinThrow);
-                break;
-
-            case 10:
-                double m1500= Math.pow((480-performanceValue),1.85);
-                score= (int) (0.03768*m1500);
-                break;
 
         }
         return score;
