@@ -5,7 +5,7 @@ import java.util.Hashtable;
 public class Competitor {
     private String firstName = "";
     private String lastName = "";
-    private Hashtable<String, Integer> scores = new Hashtable<String, Integer>();
+   /* private Hashtable<String, Integer> scores = new Hashtable<String, Integer>();
 
     public Competitor(){
         scores.put("100m", 0);
@@ -17,7 +17,7 @@ public class Competitor {
 
     public int getScore(String event) {
         return scores.get(event);
-    }
+    }*/
 
     private static boolean isValidName(String name){
         return name.matches("(?i)[a-z]([- ',.a-z]{0,23}[a-z])?");
