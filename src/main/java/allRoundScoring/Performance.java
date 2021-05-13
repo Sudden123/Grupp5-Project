@@ -58,8 +58,8 @@ public class Performance {
                 break;
 
             case 6:
-                double hurdl= Math.pow((28.5-performanceValue),1.92);
-                score= (int) (5.74352*hurdl);
+                double hurdle= Math.pow((28.5-performanceValue),1.92);
+                score= (int) (5.74352*hurdle);
                 break;
 
             case 7:

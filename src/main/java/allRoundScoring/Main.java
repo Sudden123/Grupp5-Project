@@ -100,7 +100,7 @@ public class Main {
                             System.out.println("Enter a performance value in seconds");
                             double sprintValue = scan.nextDouble();
                             value.setPerformanceValue(sprintValue);
-                            System.out.println("The saved value for 400m is " + sprintValue + "s");
+                            System.out.println("The saved value for 400m is " + sprintValue + "S");
                             System.out.println("The Score is" + value.computeScore(field));
                             break;
 
