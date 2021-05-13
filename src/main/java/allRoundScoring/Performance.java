@@ -64,7 +64,7 @@ public class Performance {
 
             case 3:
                 double shotPut= Math.pow((performanceValue- 1.5),1.05);
-                score+= (int) (51.39 *shotPut);
+                score+= (int) (56.0211 *shotPut);
                 break;
 
             case 4:
