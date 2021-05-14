@@ -32,20 +32,20 @@ public class Competitor {
         lastName = name;
     }
 
+
     public String getFirstName(String name) {
-        while (true){
-            try {
-                if (isValidName(name)==true){
+        try {
+            while (true) {
+
+                if (isValidName(name) == true) {
                     System.out.println("Valid name");
                     break;
                 }
-            } catch (Exception e){
+            }
+        }catch (Exception e){
                 System.out.println("Invalid name");
             }
-
-
-        }
-        return firstName;
+            return firstName;
     }
 
     public String getLastName(String name) {
