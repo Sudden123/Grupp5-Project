@@ -28,6 +28,14 @@ public class Performance {
                 double longJump= Math.pow((performanceValue- 220),1.4);
                 score+= (int) (0.14354*longJump);
                 break;
+            case 3:
+                double shotPut= Math.pow((performanceValue- 1.5),1.05);
+                score+= (int) (51.39 *shotPut);
+                break;
+            case 4:
+                double highJump= Math.pow((performanceValue- 75),1.42);
+                score+= (int) (0.8465 *highJump);
+                break;
 
             case 8:
                 double poleVault= Math.pow((performanceValue-100),1.35);
@@ -42,6 +50,21 @@ public class Performance {
             case 10:
                 double m1500= Math.pow((480-performanceValue),1.85);
                 score= (int) (0.03768*m1500);
+                break;
+
+            case 5:
+                double m400= Math.pow((82-performanceValue),1.81);
+                score= (int) (1.53775*m400);
+                break;
+
+            case 6:
+                double hurdl= Math.pow((28.5-performanceValue),1.92);
+                score= (int) (5.74352*hurdl);
+                break;
+
+            case 7:
+                double discusThrow= Math.pow((performanceValue-4),1.1);
+                score= (int) (12.91*discusThrow);
                 break;
 
         }
@@ -64,7 +87,7 @@ public class Performance {
 
             case 3:
                 double shotPut= Math.pow((performanceValue- 1.5),1.05);
-                score+= (int) (51.39 *shotPut);
+                score+= (int) (56.0211 *shotPut);
                 break;
 
             case 4:

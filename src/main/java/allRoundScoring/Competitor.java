@@ -19,8 +19,12 @@ public class Competitor {
         return scores.get(event);
     }*/
 
+    private static boolean isValidName(String name){
+        return name.matches("(?i)[a-z]([- ',.a-z]{0,23}[a-z])?");
+    }
 
     public void setFirstName(String name) {
+
         firstName = name;
     }
 
@@ -28,11 +32,28 @@ public class Competitor {
         lastName = name;
     }
 
+
     public String getFirstName(String name) {
-        return firstName;
+        try {
+            while (true) {
+
+                if (isValidName(name) == true) {
+                    System.out.println("Valid name");
+                    break;
+                }
+            }
+        }catch (Exception e){
+                System.out.println("Invalid name");
+            }
+            return firstName;
     }
 
     public String getLastName(String name) {
+        if (isValidName(name)==true){
+            System.out.println("Valid name");
+        }else {
+            System.out.println("Invalid name");
+        }
         return lastName;
     }
 
