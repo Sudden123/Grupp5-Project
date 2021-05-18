@@ -5,12 +5,14 @@ public class Performance {
     private double performanceValue = 0;
 
 
-    public void setPerformanceValue(double input) {
+    public double setPerformanceValue(double input) {
 
         performanceValue = input;
+
+        return input;
     }
 
-    public double getPerformanceValue() {
+    public double getPerformanceValue(double input) {
 
         return performanceValue;
     }
