@@ -1,16 +1,29 @@
 Feature: Allround scoring system
 
   @Prio1
-  Scenario: As an official I want to be able to register a competitor first name
-    Given I have typed competitors first name
+  Scenario Outline: As an official I want to be able to register a competitor first name
+    Given I have typed competitors first name as "<firstName>"
     When I press enter
     Then The competitors first name is saved
+    Examples:
+      | firstName     |
+      | Carolina      |
+      | Katarina Mary |
+      | Bjorn         |
+      | Ake           |
+
 
   @Prio1.5
-  Scenario: As an official I want to be able to register a competitor last name
-    Given I have typed competitors last name
+  Scenario Outline: As an official I want to be able to register a competitor last name
+    Given I have typed competitors last name as "<lastName>"
     When I press enter
     Then The competitors last name is saved
+    Examples:
+      | lastName         |
+      | Melnychenko      |
+      | Kluft            |
+      | Johnson-Thompson |
+      | O'Brien          |
 
   @Prio1.9
   Scenario: As an official I want to be able to choose male or female

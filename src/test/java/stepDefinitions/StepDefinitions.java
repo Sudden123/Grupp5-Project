@@ -9,13 +9,21 @@ import static org.junit.Assert.assertEquals;
 
 public class StepDefinitions {
 
-    @Given("I have typed competitors first name")
-    public void i_have_typed_competitors_first_name() {
-        String input = "Malin";
+    @Given("I have typed competitors first name as {string}")
+    public void i_have_typed_competitors_first_name_as(String inputFirstName) {
+        //String input = "Malin";
         Competitor firstName = new Competitor();
-        firstName.setFirstName(input);
+        firstName.setFirstName(inputFirstName);
 
-        assertEquals("Malin", firstName.getFirstName(input));
+        if (inputFirstName.equals("Carolina")) {
+            assertEquals("Carolina", firstName.getFirstName(inputFirstName));
+        } else if (inputFirstName.equals("Katarina Mary")) {
+            assertEquals("Katarina Mary", firstName.getFirstName(inputFirstName));
+        } else if (inputFirstName.equals("Bjorn")) {
+            assertEquals("Bjorn", firstName.getFirstName("Bjorn"));
+        } else if (inputFirstName.equals("Ake")) {
+            assertEquals("Ake", firstName.getFirstName("Ake"));
+        }
     }
 
     @When("I press enter")
@@ -28,13 +36,20 @@ public class StepDefinitions {
 
     }
 
-    @Given("I have typed competitors last name")
-    public void i_have_typed_competitors_last_name() {
-        String input = "Göransson";
+    @Given("I have typed competitors last name as {string}")
+    public void i_have_typed_competitors_last_name_as(String stringLastName) {
         Competitor lastName = new Competitor();
-        lastName.setLastName(input);
+        lastName.setLastName(stringLastName);
 
-        assertEquals("Göransson", lastName.getLastName(input));
+        if (stringLastName.equals("Melnychenko")) {
+            assertEquals("Melnychenko", lastName.getLastName(stringLastName));
+        } else if (stringLastName.equals("Kluft")) {
+            assertEquals("Kluft", lastName.getLastName(stringLastName));
+        } else if (stringLastName.equals("Johnson-Thompson")) {
+            assertEquals("Johnson-Thompson", lastName.getLastName(stringLastName));
+        } else if (stringLastName.equals("O'Brien")) {
+            assertEquals("O'Brien", lastName.getLastName(stringLastName));
+        }
     }
 
 
@@ -52,10 +67,12 @@ public class StepDefinitions {
     public void i_have_input_performance_value() {
 
     }
+
     @When("I press Save")
     public void i_press_save() {
 
     }
+
     @Then("The result <value> should be saved")
     public void the_result_value_should_be_saved() {
 
