@@ -21,8 +21,8 @@ public class StepDefinitions {
             assertEquals("Katarina Mary", firstName.getFirstName(inputFirstName));
         } else if (inputFirstName.equals("Bjorn")) {
             assertEquals("Bjorn", firstName.getFirstName("Bjorn"));
-        } else if (inputFirstName.equals("Ake")) {
-            assertEquals("Ake", firstName.getFirstName("Ake"));
+        } else if (inputFirstName.equals("Sven-Ake")) {
+            assertEquals("Sven-Ake", firstName.getFirstName("Ake"));
         }
     }
 
@@ -43,8 +43,8 @@ public class StepDefinitions {
 
         if (stringLastName.equals("Melnychenko")) {
             assertEquals("Melnychenko", lastName.getLastName(stringLastName));
-        } else if (stringLastName.equals("Kluft")) {
-            assertEquals("Kluft", lastName.getLastName(stringLastName));
+        } else if (stringLastName.equals("Goransson")) {
+            assertEquals("Goransson", lastName.getLastName(stringLastName));
         } else if (stringLastName.equals("Johnson-Thompson")) {
             assertEquals("Johnson-Thompson", lastName.getLastName(stringLastName));
         } else if (stringLastName.equals("O'Brien")) {

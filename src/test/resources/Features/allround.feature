@@ -10,7 +10,7 @@ Feature: Allround scoring system
       | Carolina      |
       | Katarina Mary |
       | Bjorn         |
-      | Ake           |
+      | Sven-Ake      |
 
 
   @Prio1.5
@@ -21,7 +21,7 @@ Feature: Allround scoring system
     Examples:
       | lastName         |
       | Melnychenko      |
-      | Kluft            |
+      | Goransson        |
       | Johnson-Thompson |
       | O'Brien          |
 
