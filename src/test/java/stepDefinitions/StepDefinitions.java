@@ -11,19 +11,35 @@ public class StepDefinitions {
 
     @Given("I have typed competitors first name")
     public void i_have_typed_competitors_first_name() {
-        String input = "Per";
+        String input = "Malin";
         Competitor firstName = new Competitor();
         firstName.setFirstName(input);
 
-        assertEquals("Per", firstName.getFirstName(input));
+        assertEquals("Malin", firstName.getFirstName(input));
     }
 
-    @When("I press submit")
-    public void i_press_submit() {
+    @When("I press enter")
+    public void i_press_enter() {
 
     }
+
     @Then("The competitors first name is saved")
     public void the_competitors_first_name_is_saved() {
+
+    }
+
+    @Given("I have typed competitors last name")
+    public void i_have_typed_competitors_last_name() {
+        String input = "Göransson";
+        Competitor lastName = new Competitor();
+        lastName.setLastName(input);
+
+        assertEquals("Göransson", lastName.getLastName(input));
+    }
+
+
+    @Then("The competitors last name is saved")
+    public void the_competitors_last_name_is_saved() {
 
     }
 

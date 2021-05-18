@@ -3,13 +3,13 @@ Feature: Allround scoring system
   @Prio1
   Scenario: As an official I want to be able to register a competitor first name
     Given I have typed competitors first name
-    When I press submit
+    When I press enter
     Then The competitors first name is saved
 
   @Prio1.5
   Scenario: As an official I want to be able to register a competitor last name
-    Given I have typed competitors last name in textbox
-    When I press submit
+    Given I have typed competitors last name
+    When I press enter
     Then The competitors last name is saved
 
   @Prio1.9
