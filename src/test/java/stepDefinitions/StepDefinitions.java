@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import allRoundScoring.Competitor;
+import allRoundScoring.Performance;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -61,7 +62,10 @@ public class StepDefinitions {
 
     @Given("I have Performance results <value>")
     public void i_have_performance_results_value() {
-
+        int input = 200;
+        Performance highJump = new Performance();
+        highJump.setPerformanceValue(input);
+        assertEquals(200, highJump.setPerformanceValue(input), 0);
     }
 
     @Given("I have input Performance <value>")
