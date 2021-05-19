@@ -8,9 +8,9 @@ Feature: Allround scoring system
     Examples:
       | firstName     |
       | Carolina      |
-      | Katarina Mary |
+      | Katarina-Mary |
       | Bjorn         |
-      | Sven-Ake      |
+      | Sven Ake      |
 
 
   @Prio1.5

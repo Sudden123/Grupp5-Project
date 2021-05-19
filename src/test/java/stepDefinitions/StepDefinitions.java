@@ -22,8 +22,9 @@ public class StepDefinitions {
         } else if (inputFirstName.equals("Bjorn")) {
             assertEquals("Bjorn", firstName.getFirstName("Bjorn"));
         } else if (inputFirstName.equals("Sven-Ake")) {
-            assertEquals("Sven-Ake", firstName.getFirstName("Ake"));
+            assertEquals("Sven-Åke", firstName.getFirstName("Ake"));
         }
+
     }
 
     @When("I press enter")
