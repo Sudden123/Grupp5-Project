@@ -1,4 +1,5 @@
 Feature: Allround scoring system
+  # language: se
 
   @Prio1
   Scenario Outline: As an official I want to be able to register a competitor first name
@@ -9,8 +10,8 @@ Feature: Allround scoring system
       | firstName     |
       | Carolina      |
       | Katarina-Mary |
-      | Bjorn         |
-      | Sven Ake      |
+      | Björn         |
+      | Sven Åke      |
 
 
   @Prio1.5
@@ -21,7 +22,7 @@ Feature: Allround scoring system
     Examples:
       | lastName         |
       | Melnychenko      |
-      | Goransson        |
+      | Göransson        |
       | Johnson-Thompson |
       | O'Brien          |
 
