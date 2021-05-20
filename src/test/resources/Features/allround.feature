@@ -1,16 +1,30 @@
 Feature: Allround scoring system
+  # language: se
 
   @Prio1
-  Scenario: As an official I want to be able to register a competitor first name
-    Given I have typed competitors first name
-    When I press submit
-    Then The competitors first name is saved
+  Scenario Outline: As an official I want to be able to register a competitor first name
+    Given I have typed competitors first name as "<firstName>"
+    When I press enter
+    Then The competitors first name is saved as "<firstName>"
+    Examples:
+      | firstName     |
+      | Carolina      |
+      | Katarina-Mary |
+      | Bjorn         |
+      | Sven Ake      |
+
 
   @Prio1.5
-  Scenario: As an official I want to be able to register a competitor last name
-    Given I have typed competitors last name
-    When I press submit
-    Then The competitors last name is saved
+  Scenario Outline: As an official I want to be able to register a competitor last name
+    Given I have typed competitors last name as "<lastName>"
+    When I press enter
+    Then The competitors last name is saved as "<lastName>"
+    Examples:
+      | lastName         |
+      | Melnychenko      |
+      | Göransson        |
+      | Johnson-Thompson |
+      | O'Brien          |
 
   @Prio1.9
   Scenario: As an official I want to be able to choose male or female
@@ -99,19 +113,3 @@ Feature: Allround scoring system
     Given I have started the program
     When I press the drop-down list
     Then the program should load the old values
-
-    @Boundary
-    Scenario Outline: As a tester I want to try the boundary values of certain competition scores
-      Given I have typed competitors first name
-      Given I have typed competitors last name
-      Given I have chosen competition <competition>
-      Given I have selected event <event>
-      Given I have entered a performance value of <value>
-      When I press Enter
-      Then the program should show the score of <score>
-      Examples:
-        | fName | lName | competition | event | value | score |
-        | Per |  Soderberg | 1           | 3     |  1,53 |     1 |
-        | Per |  Soderberg | 1           | 3     |  1,52 |     0 |
-        | Stefanie | Aberg | 2           | 2     |  2,14 |     1 |
-        | Stefanie | Aberg | 2           | 2     |  2,13 |     0 |
