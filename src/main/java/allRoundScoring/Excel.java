@@ -1,99 +1,39 @@
 package allRoundScoring;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Excel {
-    private XSSFWorkbook workbook;
-    private String excelName;
+    public static void main(String[] args) throws IOException {
 
-    public Excel(String name) throws IOException {
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        XSSFSheet sheet0= workbook.createSheet("firstSheet");
+        Row row0 = sheet0.createRow(0);
 
-        workbook = new XSSFWorkbook();
+        Cell cellA = row0.createCell(0);
+        Cell cellB = row0.createCell(1);
 
-        excelName = name;
+        cellA.setCellValue("first cell");
+        cellB.setCellValue("second cell");
 
-    }
+        File f = new File("C:\\Prov\\Grupp5.xlsx");
+        FileOutputStream fo = new FileOutputStream(f);
 
-    public Excel() {
+        workbook.write(fo);
+        fo.close();
 
-    }
-
-
-    public void add(Object[][] data, String sheetName) {
-
-
-
-        XSSFSheet sheet = workbook.createSheet(sheetName);
-
-
-
-        int rowCount = 0;
-
-
-
-        for (Object[] aBook : data) {
-
-            Row row = sheet.createRow(rowCount);
-
-            rowCount++;
-
-            int columnCount = 0;
-
-
-
-            for (Object field : aBook) {
-
-                Cell cell = row.createCell(columnCount);
-
-                columnCount++;
-
-
-
-                if (field instanceof String) {
-
-                    cell.setCellValue((String) field);
-
-
-
-                } else if (field instanceof Integer) {
-
-                    cell.setCellValue((Integer) field);
-
-
-
-                } else if (field instanceof Double) {
-
-                    cell.setCellValue((Double) field);
-
-
-
-                }
-
-            }
-
-        }
+        System.out.println("file created!!");
 
     }
-
-
-
-    public void write() throws IOException {
-
-        FileOutputStream out = new FileOutputStream("C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.1" + excelName + ".xlsx");
-
-        workbook.write(out);
-
-        workbook.close();
-
-    }
-
 }
+
+
+
 
 
