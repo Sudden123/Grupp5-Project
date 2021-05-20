@@ -119,14 +119,20 @@ public class Performance {
         return score;
     }
 
-    public void setHeight(double height){
+    public void setHeight(double height) {
         this.height = height;
     }
-    public void setDistance(double distance){
+
+    public void setDistance(double distance) {
         this.distance = distance;
     }
+
     public void setTime(double time) {
         this.time = time;
+    }
+
+    public void setDistanceShotPut(double distance) {
+        this.distance = distance;
     }
 
     public double getHighJumpDeca() {
@@ -135,7 +141,7 @@ public class Performance {
         double c = 1.42;
 
 
-        int result = (int) (a*Math.pow((height - b), c));
+        int result = (int) (a * Math.pow((height - b), c));
 
 
         return result;
@@ -147,7 +153,7 @@ public class Performance {
         double c = 1.4;
 
 
-        int result = (int) (a*Math.pow((distance - b), c));
+        int result = (int) (a * Math.pow((distance - b), c));
 
 
         return result;
@@ -159,7 +165,20 @@ public class Performance {
         double c = 1.835;
 
 
-        int result = (int) (a*Math.pow((b - time), c));
+        int result = (int) (a * Math.pow((b - time), c));
+
+
+        return result;
+    }
+
+
+    public double getShotDistance() {
+        double a = 56.0211;
+        double b = 1.5;
+        double c = 1.05;
+
+
+        int result = (int) (a * Math.pow((distance - b), c));
 
 
         return result;

@@ -48,3 +48,9 @@ Feature: Allround scoring system
   Given I have entered 20 seconds for 100m hurdles in heptathlon
   When I ask for the result in 100m hurdles
   Then I get 302 points in 100 m hurdles
+
+  @Prio5
+  Scenario: Record shot put in heptathlon
+  Given I have entered 20 m for shot put in heptathlon
+  When I ask for the result in shot put
+  Then I get 1199 points in shot put

@@ -101,4 +101,19 @@ public class StepDefinitions {
     public void i_get_points_in_m_hurdles(Integer int1, Integer int2) {
         assertEquals(302, actual, 0);
     }
+
+    @Given("I have entered {int} m for shot put in heptathlon")
+    public void i_have_entered_m_for_shot_put_in_heptathlon(double distance) {
+        calc = new Performance();
+        calc.setDistanceShotPut(distance);
+    }
+    @When("I ask for the result in shot put")
+    public void i_ask_for_the_result_in_shot_put() {
+        actual = calc.getShotDistance();
+    }
+    @Then("I get {int} points in shot put")
+    public void i_get_points_in_shot_put(Integer int1) {
+        assertEquals(1199, actual,0);
+    }
+
 }
