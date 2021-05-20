@@ -30,8 +30,14 @@ Feature: Allround scoring system
   | O'Brien          |
   |   |
 
-  @Prio15
-  Scenario: Record high jump in Decathlon
+  @Prio2
+  Scenario: Record high jump in decathlon
   Given I have entered 232 cm for a high jump in decathlon
-  When I ask for the result
-  Then I get 1111 points
+  When I ask for the result in high jump
+  Then I get 1111 points in high jump
+
+  @Prio3
+  Scenario: Record long jump in decathlon
+  Given I have entered 400 cm for a long jump in decathlon
+  When I ask for the result in long jump
+  Then I get 206 points in long jump
