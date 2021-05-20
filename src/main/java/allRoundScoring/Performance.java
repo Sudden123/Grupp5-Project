@@ -5,13 +5,7 @@ public class Performance {
     private double performanceValue = 0;
     private double height;
     private double distance;
-
-    public void setHeight(double height){
-        this.height = height;
-    }
-    public void setDistance(double distance){
-        this.distance = distance;
-    }
+    private double time;
 
     public double setPerformanceValue(double input) {
 
@@ -125,6 +119,15 @@ public class Performance {
         return score;
     }
 
+    public void setHeight(double height){
+        this.height = height;
+    }
+    public void setDistance(double distance){
+        this.distance = distance;
+    }
+    public void setTime(double time) {
+        this.time = time;
+    }
 
     public double getHighJumpDeca() {
         double a = 0.8465;
@@ -145,6 +148,18 @@ public class Performance {
 
 
         int result = (int) (a*Math.pow((distance - b), c));
+
+
+        return result;
+    }
+
+    public double get100mHurdle() {
+        double a = 9.23076;
+        double b = 26.7;
+        double c = 1.835;
+
+
+        int result = (int) (a*Math.pow((b - time), c));
 
 
         return result;
