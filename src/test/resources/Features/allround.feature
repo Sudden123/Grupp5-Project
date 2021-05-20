@@ -3,6 +3,7 @@ Feature: Allround scoring system
   # language: eng
   # language: no
   # language: se
+  # language: fi
 
   @Prio1
   Scenario Outline: As an official I want to be able to register a competitor first name
