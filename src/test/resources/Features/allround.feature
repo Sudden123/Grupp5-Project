@@ -118,3 +118,9 @@ Feature: Allround scoring system
   Given I have started the program
   When I press the drop-down list
   Then the program should load the old values
+
+  @Prio15
+  Scenario: Record high jump in Decathlon
+  Given I have entered 232 cm for a high jump in decathlon
+  When I ask for the result
+  Then I get 1111 points
