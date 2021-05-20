@@ -3,9 +3,7 @@ package allRoundScoring;
 public class Performance {
 
     private double performanceValue = 0;
-    private double height;
-    private double distance;
-    private double time;
+    private double value;
 
     public double setPerformanceValue(double input) {
 
@@ -47,8 +45,8 @@ public class Performance {
                 break;
 
             case 6:
-                double hurdl = Math.pow((28.5 - performanceValue), 1.92);
-                score = (int) (5.74352 * hurdl);
+                double hurdle = Math.pow((28.5 - performanceValue), 1.92);
+                score = (int) (5.74352 * hurdle);
                 break;
 
             case 7:
@@ -119,20 +117,8 @@ public class Performance {
         return score;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public void setDistance(double distance) {
-        this.distance = distance;
-    }
-
-    public void setTime(double time) {
-        this.time = time;
-    }
-
-    public void setDistanceShotPut(double distance) {
-        this.distance = distance;
+    public void setValue(double value) {
+        this.value = value;
     }
 
     public double getHighJumpDeca() {
@@ -141,7 +127,7 @@ public class Performance {
         double c = 1.42;
 
 
-        int result = (int) (a * Math.pow((height - b), c));
+        int result = (int) (a * Math.pow((value - b), c));
 
 
         return result;
@@ -153,7 +139,7 @@ public class Performance {
         double c = 1.4;
 
 
-        int result = (int) (a * Math.pow((distance - b), c));
+        int result = (int) (a * Math.pow((value - b), c));
 
 
         return result;
@@ -165,7 +151,7 @@ public class Performance {
         double c = 1.835;
 
 
-        int result = (int) (a * Math.pow((b - time), c));
+        int result = (int) (a * Math.pow((b - value), c));
 
 
         return result;
@@ -178,7 +164,7 @@ public class Performance {
         double c = 1.05;
 
 
-        int result = (int) (a * Math.pow((distance - b), c));
+        int result = (int) (a * Math.pow((value - b), c));
 
 
         return result;

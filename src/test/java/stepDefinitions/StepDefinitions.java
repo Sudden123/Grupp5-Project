@@ -61,7 +61,7 @@ public class StepDefinitions {
     @Given("I have entered {int} cm for a high jump in decathlon")
     public void i_have_entered_cm_for_a_high_jump_in_decathlon(double height) {
         calc = new Performance();
-        calc.setHeight(height);
+        calc.setValue(height);
     }
 
     @When("I ask for the result in high jump")
@@ -77,7 +77,7 @@ public class StepDefinitions {
     @Given("I have entered {int} cm for a long jump in decathlon")
     public void i_have_entered_cm_for_a_long_jump_in_decathlon(double distance) {
         calc = new Performance();
-        calc.setDistance(distance);
+        calc.setValue(distance);
     }
     @When("I ask for the result in long jump")
     public void i_ask_for_the_result_in_long_jump() {
@@ -91,7 +91,7 @@ public class StepDefinitions {
     @Given("I have entered {int} seconds for 100m hurdles in heptathlon")
     public void i_have_entered_seconds_for_100m_hurdles_in_heptathlon(double time) {
         calc = new Performance();
-        calc.setTime(time);
+        calc.setValue(time);
     }
     @When("I ask for the result in 100m hurdles")
     public void i_ask_for_the_result_in_100m_hurdles() {
@@ -105,7 +105,7 @@ public class StepDefinitions {
     @Given("I have entered {int} m for shot put in heptathlon")
     public void i_have_entered_m_for_shot_put_in_heptathlon(double distance) {
         calc = new Performance();
-        calc.setDistanceShotPut(distance);
+        calc.setValue(distance);
     }
     @When("I ask for the result in shot put")
     public void i_ask_for_the_result_in_shot_put() {
