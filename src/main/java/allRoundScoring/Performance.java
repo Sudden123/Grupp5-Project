@@ -4,10 +4,13 @@ public class Performance {
 
     private double performanceValue = 0;
     private double height;
+    private double distance;
 
     public void setHeight(double height){
         this.height = height;
-
+    }
+    public void setDistance(double distance){
+        this.distance = distance;
     }
 
     public double setPerformanceValue(double input) {
@@ -130,6 +133,18 @@ public class Performance {
 
 
         int result = (int) (a*Math.pow((height - b), c));
+
+
+        return result;
+    }
+
+    public double getLongJumpDeca() {
+        double a = 0.14354;
+        int b = 220;
+        double c = 1.4;
+
+
+        int result = (int) (a*Math.pow((distance - b), c));
 
 
         return result;

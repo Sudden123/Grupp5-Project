@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class StepDefinitions {
     Competitor firstName = new Competitor();
     Competitor lastName = new Competitor();
-    Performance highJump = new Performance();
+    Performance calc = new Performance();
     double actual;
 
     @Given("I have typed competitor's first name as {string}")
@@ -62,19 +62,31 @@ public class StepDefinitions {
 
     @Given("I have entered {int} cm for a high jump in decathlon")
     public void i_have_entered_cm_for_a_high_jump_in_decathlon(double height) {
-        highJump = new Performance();
-        highJump.setHeight(height);
+        calc = new Performance();
+        calc.setHeight(height);
     }
 
-    @When("I ask for the result")
-    public void i_ask_for_the_result() {
-        actual = highJump.getHighJumpDeca();
+    @When("I ask for the result in high jump")
+    public void i_ask_for_the_result_in_high_jump(){
+        actual = calc.getHighJumpDeca();
 
     }
-    @Then("I get {int} points")
-    public void i_get_points(double expected) {
+    @Then("I get {int} points in high jump")
+    public void i_get_points_in_high_jump(Integer int1) {
         assertEquals(1111, actual, 0);
-
     }
 
+    @Given("I have entered {int} cm for a long jump in decathlon")
+    public void i_have_entered_cm_for_a_long_jump_in_decathlon(double distance) {
+        calc = new Performance();
+        calc.setDistance(distance);
+    }
+    @When("I ask for the result in long jump")
+    public void i_ask_for_the_result_in_long_jump() {
+        actual = calc.getLongJumpDeca();
+    }
+    @Then("I get {int} points in long jump")
+    public void i_get_points_in_long_jump(Integer int1) {
+        assertEquals(206, actual, 0);
+    }
 }
