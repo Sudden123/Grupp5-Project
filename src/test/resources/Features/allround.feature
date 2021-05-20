@@ -3,25 +3,26 @@ Feature: Allround scoring system
   # language: eng
   # language: no
   # language: se
+  # language: fi
 
   @Prio1
-  Scenario Outline: As an official I want to be able to register a competitor first name
-  Given I have typed competitors first name as "<firstName>"
+  Scenario Outline: As an official I want to be able to register a competitor's first name
+  Given I have typed competitor's first name as "<firstName>"
   When I press enter
-  Then The competitors first name is saved as "<firstName>"
+  Then The competitor's first name is saved as "<firstName>"
   Examples:
   | firstName             |
   | Carolina              |
   | Katarina-Mary         |
-  | Björne                |
-  | Sven Håkan Mattias    |
+  | Jorgen                |
+  | Hakan Mattias Peter    |
   |  |
 
   @Prio1.5
-  Scenario Outline: As an official I want to be able to register a competitor last name
-  Given I have typed competitors last name as "<lastName>"
+  Scenario Outline: As an official I want to be able to register a competitor's last name
+  Given I have typed competitor's last name as "<lastName>"
   When I press enter
-  Then The competitors last name is saved as "<lastName>"
+  Then The competitor's last name is saved as "<lastName>"
   Examples:
   | lastName         |
   | Melnychenko      |

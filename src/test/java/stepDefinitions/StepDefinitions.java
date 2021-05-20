@@ -19,10 +19,8 @@ public class StepDefinitions {
         firstName.setFirstName(inputFirstName);
     }
 
-
     @When("I press enter")
     public void i_press_enter() {
-
     }
 
     @Then("The competitor's first name is saved as {string}")
