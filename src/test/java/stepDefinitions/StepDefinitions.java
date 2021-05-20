@@ -45,5 +45,14 @@ public class StepDefinitions {
 
     }
 
+    @Given("I have typed competitors last name")
+    public void i_have_typed_competitors_last_name() {
+        String input = "Soderberg";
+        Competitor comp = new Competitor();
+        comp.setLastName(input);
+
+        assertEquals("Soderberg", comp.getLastName(input));
+    }
+
 
 }
