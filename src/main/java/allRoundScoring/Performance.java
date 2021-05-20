@@ -10,19 +10,6 @@ public class Performance {
 
     }
 
-    public double getHighJumpDeca(double height){
-
-        double a = 0.8465;
-        int b = 75;
-        double c = 1.42;
-
-
-        int result = (int) (a*Math.pow((height - b), c));
-
-
-        return result;
-    }
-
     public double setPerformanceValue(double input) {
 
         performanceValue = input;
