@@ -61,22 +61,10 @@ public class StepDefinitions {
             System.out.println("Error with testing last name");
     }
 
-    @Given("I have Performance results <value>")
-    public void i_have_performance_results_value() {
-        int input = 200;
-        Performance highJump = new Performance();
-        highJump.setPerformanceValue(input);
-        assertEquals(200, highJump.setPerformanceValue(input), 0);
-    }
-
-
-
-
     @Given("I have entered {int} cm for a high jump in decathlon")
     public void i_have_entered_cm_for_a_high_jump_in_decathlon(double height) {
         highJump = new Performance();
         highJump.setHeight(height);
-
     }
 
     @When("I ask for the result")
