@@ -87,4 +87,18 @@ public class StepDefinitions {
     public void i_get_points_in_long_jump(Integer int1) {
         assertEquals(206, actual, 0);
     }
+
+    @Given("I have entered {int} seconds for 100m hurdles in heptathlon")
+    public void i_have_entered_seconds_for_100m_hurdles_in_heptathlon(double time) {
+        calc = new Performance();
+        calc.setTime(time);
+    }
+    @When("I ask for the result in 100m hurdles")
+    public void i_ask_for_the_result_in_100m_hurdles() {
+        actual = calc.get100mHurdle();
+    }
+    @Then("I get {int} points in {int} m hurdles")
+    public void i_get_points_in_m_hurdles(Integer int1, Integer int2) {
+        assertEquals(302, actual, 0);
+    }
 }
