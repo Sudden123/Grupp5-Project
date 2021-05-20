@@ -11,6 +11,8 @@ import static org.junit.Assert.assertEquals;
 public class StepDefinitions {
     Competitor firstName = new Competitor();
     Competitor lastName = new Competitor();
+    Performance highJump = new Performance();
+    double actual;
 
     @Given("I have typed competitor's first name as {string}")
     public void i_have_typed_competitor_s_first_name_as(String inputFirstName) {
@@ -58,28 +60,21 @@ public class StepDefinitions {
             System.out.println("Error with testing last name");
     }
 
-    @Given("I have Performance results <value>")
-    public void i_have_performance_results_value() {
-        int input = 200;
-        Performance highJump = new Performance();
-        highJump.setPerformanceValue(input);
-        assertEquals(200, highJump.setPerformanceValue(input), 0);
+    @Given("I have entered {int} cm for a high jump in decathlon")
+    public void i_have_entered_cm_for_a_high_jump_in_decathlon(double height) {
+        highJump = new Performance();
+        highJump.setHeight(height);
     }
 
-    @Given("I have input Performance <value>")
-    public void i_have_input_performance_value() {
+    @When("I ask for the result")
+    public void i_ask_for_the_result() {
+        actual = highJump.getHighJumpDeca();
 
     }
-
-    @When("I press Save")
-    public void i_press_save() {
-
-    }
-
-    @Then("The result <value> should be saved")
-    public void the_result_value_should_be_saved() {
+    @Then("I get {int} points")
+    public void i_get_points(double expected) {
+        assertEquals(1111, actual, 0);
 
     }
-
 
 }

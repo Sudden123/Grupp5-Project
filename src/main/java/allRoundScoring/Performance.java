@@ -3,7 +3,12 @@ package allRoundScoring;
 public class Performance {
 
     private double performanceValue = 0;
+    private double height;
 
+    public void setHeight(double height){
+        this.height = height;
+
+    }
 
     public double setPerformanceValue(double input) {
 
@@ -117,4 +122,16 @@ public class Performance {
         return score;
     }
 
+
+    public double getHighJumpDeca() {
+        double a = 0.8465;
+        int b = 75;
+        double c = 1.42;
+
+
+        int result = (int) (a*Math.pow((height - b), c));
+
+
+        return result;
+    }
 }
