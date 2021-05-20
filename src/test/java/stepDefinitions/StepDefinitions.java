@@ -72,24 +72,7 @@ public class StepDefinitions {
 
     }
 
-    @When("I press Save")
-    public void i_press_save() {
-
+    @Then("the result should be displayed")
+    public void the_result_should_be_displayed() {
     }
-
-    @Then("The result <value> should be saved")
-    public void the_result_value_should_be_saved() {
-
-    }
-
-    @Given("I have typed competitors last name")
-    public void i_have_typed_competitors_last_name() {
-        String input = "Soderberg";
-        Competitor comp = new Competitor();
-        comp.setLastName(input);
-
-        assertEquals("Soderberg", comp.getLastName(input));
-    }
-
-
 }
