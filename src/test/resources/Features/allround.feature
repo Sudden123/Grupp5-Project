@@ -112,3 +112,13 @@ Feature: Allround scoring system
     Given I have started the program
     When I press the drop-down list
     Then the program should load the old values
+
+  @Prio1.9
+  Scenario: As an official I want to be able to choose decathlon (males)
+    Given I have have chosen to Register a new competitor for decathlon (males)
+    Then I press "1" Decathlon (males)
+
+  @Prio1.9
+  Scenario: As an official I want to be able to choose heptathlon (females)
+    Given I have have chosen to Register a new competitor for heptathlon (females)
+    Then I press "2" heptathlon (females)

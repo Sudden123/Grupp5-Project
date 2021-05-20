@@ -77,6 +77,16 @@ public class StepDefinitions {
     public void the_result_value_should_be_saved() {
 
     }
+    @Given("I have have chosen to Register a new competitor for decathlon \\(males)")
+    public void i_have_have_chosen_to_register_a_new_competitor_for_decathlon_males() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Given("I have have chosen to Register a new competitor for heptathlon \\(females)")
+    public void i_have_have_chosen_to_register_a_new_competitor_for_heptathlon_females() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
 
 
 }
