@@ -44,16 +44,15 @@ public class Main {
                             System.out.println("Enter a performance value in seconds: ");
                             double perfValue = scan.nextDouble();
                             value.setPerformanceValue(perfValue);
-                            //double finalValue = value.getPerformanceValue();
                             System.out.println("The saved value for 100 m is " + perfValue + "s");
                             System.out.println("The score is " + value.computeScore(field));
                             break;
 
                         case 2:
-                            System.out.println("Enter a performance value in meters: ");
+                            System.out.println("Enter a performance value in centimeters: ");
                             double longJump = scan.nextDouble();
                             value.setPerformanceValue(longJump);
-                            System.out.println("The saved value for long jump is " + longJump + " m");
+                            System.out.println("The saved value for long jump is " + longJump + " cm");
                             System.out.println("The score is " + value.computeScore(field));
                             break;
 
