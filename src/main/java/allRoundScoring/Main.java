@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        ExcelTest test = new ExcelTest();
-        test.createExel();
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Choose action (type a number and press enter): ");
         System.out.println("1. Register a new competitor");
