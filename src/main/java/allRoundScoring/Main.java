@@ -15,7 +15,6 @@ public class Main {
 
         int operator = scan.nextInt();
 
-
         switch (operator) {
             case 1:
                 System.out.println("Choose event: \n1. Decathlon (males)\n2. Heptathlon (females)");
@@ -27,7 +26,6 @@ public class Main {
                 String name = scan.nextLine();
                 comp.setFirstName(name);
                 String firstName = comp.getFirstName(name);
-
 
 
                 System.out.println("Type competitor's last name: ");
