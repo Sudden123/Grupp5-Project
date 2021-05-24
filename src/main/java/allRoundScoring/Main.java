@@ -15,6 +15,7 @@ public class Main {
 
         int operator = scan.nextInt();
 
+
         switch (operator) {
             case 1:
                 System.out.println("Choose event: \n1. Decathlon (males)\n2. Heptathlon (females)");
