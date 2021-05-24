@@ -26,6 +26,8 @@ public class Main {
                 comp.setFirstName(name);
                 String firstName = comp.getFirstName(name);
 
+
+
                 System.out.println("Type competitor's last name: ");
                 String name2 = scan.nextLine();
                 comp.setLastName(name2);
@@ -190,7 +192,10 @@ public class Main {
                 }
                 break;
 
-            case 2:
+            case 3:
+                OpenExcel score = new OpenExcel();
+                   score.showScore();
+                   break;
 
         }
 

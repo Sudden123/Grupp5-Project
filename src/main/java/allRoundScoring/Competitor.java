@@ -1,8 +1,11 @@
 package allRoundScoring;
 
+import java.util.Hashtable;
+
 public class Competitor {
     private String firstName = "";
     private String lastName = "";
+
 
     private static boolean isValidName(String name) {
         return name.matches("(?i)[a-z]([- ',.a-z]{0,23}[a-z])?");
@@ -20,6 +23,7 @@ public class Competitor {
 
     public String getFirstName(String name) {
 
+
         return firstName;
     }
 
@@ -30,7 +34,5 @@ public class Competitor {
 
 
     }
-
-
 
 
