@@ -4,8 +4,8 @@ import java.awt.Desktop;
 import java.io.*;
 
 public class OpenExcel {
-    public static void main(String[] args)
-        {
+    public void showScore (){
+
             try
             {
 //constructor of file class having file as argument
@@ -23,5 +23,5 @@ public class OpenExcel {
             {
                 e.printStackTrace();
             }
-        }
-    }
+       }
+}
