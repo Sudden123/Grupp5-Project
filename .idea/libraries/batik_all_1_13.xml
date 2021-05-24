@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="batik-all-1.13">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/poi-5.0.0/auxiliary/batik-all-1.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
