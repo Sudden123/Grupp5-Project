@@ -8,31 +8,32 @@ public class Competitor {
 
     private int[] scores;
 
-    //konstruktor :
+    //constructor - unfortunately did not work with StepDefinitions automated tests
     /*public Competitor(String firstName, String lastName) {
         this.firstName=firstName;
         this.lastName=lastName;
-
         scores= new int[10]; //only decathlon
     }*/
 
-    //konstruktor:
+    //TIPS FRÅN STAFFAN: skapa objekt i klassen Competitor till varje athlete, och varje athlete kommer ha en array med sina score
+
+    //constructor:
     public Competitor() {
-        scores= new int[10]; //only decathlon
+        scores= new int[10]; //only decathlon for now
     }
 
-    public void setScores(int event, int score){
+    public void setScore(int event, int score){
         scores[event]=score;
     }
 
-    //getScores metod som returnerar en int
-    public int getScores(int event){
+
+    public int getScore(int event){
         return scores[event];
     }
 
+
     public void setFirstName(String name) {
         firstName = name;
-
     }
 
     public void setLastName(String name) {
