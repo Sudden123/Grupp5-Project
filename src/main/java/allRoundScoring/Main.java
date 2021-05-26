@@ -22,14 +22,15 @@ public class Main {
                 scan.nextLine();
 
                 System.out.println("Type competitor's first name: ");
-                Competitor comp = new Competitor();
                 String name = scan.nextLine();
+                System.out.println("Type competitor's last name: ");
+                String name2 = scan.nextLine();
+
+                //Competitor comp = new Competitor(name,name2); //in case constructor has 2 Strings as input
+                Competitor comp = new Competitor();
                 comp.setFirstName(name);
                 String firstName = comp.getFirstName(name);
 
-
-                System.out.println("Type competitor's last name: ");
-                String name2 = scan.nextLine();
                 comp.setLastName(name2);
                 String lastName = comp.getLastName(name2);
                 System.out.println("Competitor " + firstName + " " + lastName + " has been successfully registered." + "\n");
