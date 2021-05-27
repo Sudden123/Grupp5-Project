@@ -23,7 +23,6 @@ public class Competitor {
 
     public String getFirstName(String name) {
 
-
         return firstName;
     }
 
